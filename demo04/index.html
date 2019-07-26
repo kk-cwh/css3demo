@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>伪元素</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      .clearfix {
+        clear: both;
+        overflow: auto;
+      }
+      .demo {
+        border: 1px solid #ccc;
+        width: 300px;
+        margin: 50px auto;
+        padding: 10px;
+      }
+      .demo01{
+        border: 1px solid #ccc;
+        width: 300px;
+        margin: 10px auto;
+        padding: 10px;
+        text-align: center;
+
+      }
+      .demo::first-letter {
+        font-size: 40px;
+        font-weight: bold;
+        float: left;
+        color:#76f;
+      }
+      .demo::first-line{
+          color: #f66;
+      }
+
+      .demo01::before{
+          content: url(./timg.jpg);
+          display: block;
+      }
+      .demo01::after{
+          content: url(./timg.jpg);
+          display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo">
+      伪元素Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+      fugiat minus molestiae incidunt, voluptatibus veniam itaque quis qui
+      aliquam quam at ea saepe ullam obcaecati atque doloribus reprehenderit
+      mollitia alias.
+    </div>
+
+    <div class="demo01">
+        玩转CSS3新特性
+    </div>
+  </body>
+</html>

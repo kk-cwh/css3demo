@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>transform</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        
+      }
+      .clearfix {
+        clear: both;
+        overflow: auto;
+      }
+      body{
+        background-color: #ddd;
+      }
+      .main {
+        margin: 100px auto;
+        width: 800px;
+        clear: both;
+     
+      }
+      .main li {
+        list-style: none;
+        width: 240px;
+        padding: 1px;
+        border: 1px solid rgba(255, 0, 0, 0);
+        cursor: pointer;
+        background-color: #fff;
+        float: left;
+        margin: 5px;
+      }
+      .img img {
+        width: 240px;
+        transition: all .6s;
+      }
+      .goods_title {
+        margin: 10px;
+        color: #666;
+        height: 35px;
+        overflow: hidden;
+        font-size: 14px;
+      }
+      .price{
+        margin: 10px;
+        color: #f00;
+      }
+      .main li:hover{
+        border: 1px solid rgba(255, 0, 0, 1);
+      }
+      .main li:hover .img img{
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <ul>
+        <li>
+          <div class="img">
+            <img src="./timg.jpg" alt="" />
+          </div>
+          <div class="goods_title">
+            绝对是类似垃圾费洒落的法律圾费洒落的法
+          </div>
+          <div class="price">
+            999.22
+          </div>
+        </li>
+        <li>
+            <div class="img">
+              <img src="./timg.jpg" alt="" />
+            </div>
+            <div class="goods_title">
+              绝对是类似垃圾费洒落的法律圾费洒落的法
+            </div>
+            <div class="price">
+              999.22
+            </div>
+          </li>
+          <li>
+              <div class="img">
+                <img src="./timg.jpg" alt="" />
+              </div>
+              <div class="goods_title">
+                绝对是类似垃圾费洒落的法律圾费洒落的法
+              </div>
+              <div class="price">
+                999.22
+              </div>
+            </li>
+      </ul>
+    </div>
+  </body>
+</html>

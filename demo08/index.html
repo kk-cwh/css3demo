@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>五角星</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      .clearfix {
+        clear: both;
+        overflow: auto;
+      }
+      .star {
+        width: 0px;
+        height: 0px;
+        border: 100px solid transparent;
+        border-bottom: 70px solid #f66;
+        margin: 10px auto;
+        transform: rotate(35deg);
+        position: relative;
+      }
+      .star::before {
+        content: '';
+        width: 0px;
+        height: 0px;
+        border: 30px solid transparent;
+        border-bottom: 80px solid #f66;
+        border-top: 0px;
+        position: absolute;
+        transform: rotate(-35deg);
+        top: -45px;
+        left: -65px;
+      }
+      .star::after {
+        content: '';
+        width: 0px;
+        height: 0px;
+        border: 100px solid transparent;
+        border-bottom: 70px solid #f66;
+        border-top: 0px;
+        position: absolute;
+        transform: rotate(-70deg);
+        top: 3px;
+        left: -105px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+  </body>
+</html>
